@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //genap
+        let y = 0
+        do {
+            console.log('data y ke-', y)
+            y += 2
+        } while (y <= 10)
+        //ganjil
+        let p = 1
+        do {
+            console.log('data p ke-', p)
+            p += 2
+        } while (p <= 19)
+
+        // menghitung n faktorial
+        function hitungFaktorial(n) {
+            let hasilFaktorial = 1;
+
+            for (let i = 1; i <= n; i++) {
+                hasilFaktorial *= i;
+            }
+
+            return hasilFaktorial;
+        }
+
+        // Contoh penggunaan
+        const n = prompt('Masukkan Angka Faktorial');
+        const hasilFaktorial = hitungFaktorial(n);
+
+        console.log(`Faktorial dari ${ n } adalah: ${ hasilFaktorial }`); 
+    </script>
+</body>
+
+</html>
